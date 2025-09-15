@@ -1,0 +1,6 @@
+# Upload a file
+curl -X POST http://localhost:4500/upload \
+  -F "file=@mydoc.txt"
+
+# Download file by ID
+curl http://localhost:4500/download/<uuid> -o output.txt
